@@ -21,7 +21,7 @@ sudo apt-get -y install zeek python3-setuptools
 pip3 install zkg wheel
 export PATH="/opt/zeek/bin:$PATH"
 zkg autoconfig
-zkg install --force https://github.com/philrz/ngrok-ssh --version "$PACKAGE_SHA"
+zkg install --force https://github.com/philrz/geoip-conn --version "$PACKAGE_SHA"
 echo '@load packages' | tee -a /opt/zeek/share/zeek/site/local.zeek
 
 # Do a lookup of an IP that's known to have a stable location.
